@@ -1,11 +1,5 @@
-const navOptions = document.getElementById("nav-options");
-
-window.addEventListener("click", (event) => {
-	console.log("Window is clicked");
-	navOptions.setAttribute("display", "flex");
-});
-
-document.getElementById("menu-icon").addEventListener("click", (event) => {
-	console.log("Menu icon is clicked");
-	navOptions.setAttribute("display", "none");
+document.querySelector("#menu-icon").addEventListener("click", (event) => {
+	const navOptions = document.querySelector("#nav-options");
+	const display = navOptions.style.display;
+	navOptions.style.display = display == "flex" ? "none" : "flex";
 });

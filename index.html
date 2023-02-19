@@ -18,7 +18,15 @@
 				<a href="#skills" class="nav-link skills">Skills</a>
 				<a href="#projects" class="nav-link projects">Projects</a>
 				<a href="#contact" class="nav-link contact">Contact</a>
-				<a id="resume-link-1" class="nav-link contact">Resume</a>
+				<a
+					id="resume-link-1"
+					class="nav-link contact"
+					href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
+					target="_blank"
+				>
+					<img src="resources/download-icon.png" />
+					Resume
+				</a>
 			</div>
 			<img id="menu-icon" src="resources/menu-icon.png" alt="hamburger-icon" />
 		</nav>
@@ -40,7 +48,15 @@
 						apply the skills and solve more problems. Looking for an opportunity in a
 						technology driven organization that enhances one's skills and knowledge
 					</p>
-					<a id="resume-link-2" class="nav-link contact">Resume</a>
+					<a
+						id="resume-link-2"
+						class="nav-link contact"
+						href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
+						target="_blank"
+					>
+						<img src="resources/download-icon.png" />
+						Resume
+					</a>
 				</div>
 			</div>
 		</div>
@@ -118,49 +134,88 @@
 
 		<div id="projects">
 			<h1 class="section-headings">Projects</h1>
-			<div class="project-card">
-				<img src="resources/react.png" alt="project-img" />
-				<h2 class="project-title">Chillout</h2>
-				<p class="project-description">
-					Chillout is an online platform where user can search and book any hotel. User
-					can search multiple hotels across the world at different locations and fine tune
-					the results using multiple filters, book the hotel and pay the bill.
-				</p>
-				<p class="project-tech-stack">Tech Stack: HTML | CSS | JS</p>
-				<a class="project-github-link" href="">Chillout GitHub Link</a>
-				<a class="project-deployed-link" href="">Chillout Netlify Link</a>
-			</div>
-			<div class="project-card">
-				<img src="resources/react.png" alt="project-img" />
-				<h2 class="project-title">KPC</h2>
-				<p class="project-description">
-					KPC is an online non-veg food website where user can buy different kinds of
-					chicken dishes and get delivered at the door-step within 24hrs. The website
-					showcase variety of chicken items with different flavours, sizes, price etc. The
-					user can buy any product, mark any product as favourite, get the summary of the
-					order and make the payment. The website also has admin side where admin can add,
-					delete, update and create new prodcuts in the database.
-				</p>
-				<p class="project-tech-stack">Tech Stack: HTML | CSS | JS</p>
-				<a class="project-github-link" href="">KPC GitHub Link</a>
-				<a class="project-deployed-link" href="">KPC Netlify Link</a>
-			</div>
-			<div class="project-card">
-				<img src="resources/react.png" alt="project-img" />
-				<h2 class="project-title">Fashion Fabric</h2>
-				<p class="project-description">
-					Fashion Fabric is an e-commerce website that provides modern clothing like
-					coats, jackets, pants etc. The websites provides clothing for different age
-					group, gender, style, colors etc. User can search the desired apparels, fine
-					tune the results using filter functionality and sort according to the price or
-					rating of the products. User can buy multiple products, mark them as favourite,
-					see the order details, delete the product from the order and make the payment.
-					The website also has the admin side where stock can be managed by adding,
-					updating, deleteing or creating new products in the database
-				</p>
-				<p class="project-tech-stack">Tech Stack: HTML | CSS | JS</p>
-				<a class="project-github-link" href="">KPC GitHub Link</a>
-				<a class="project-deployed-link" href="">KPC Netlify Link</a>
+			<div id="projects-wrapper">
+				<div class="project-card">
+					<img src="resources/chillout.png" alt="project-img" />
+					<h2 class="project-title">Chillout</h2>
+					<p class="project-tech-stack">Tech Stack: HTML | CSS | JS</p>
+					<div class="project-links">
+						<a
+							class="project-github-link"
+							href="https://github.com/rajeshuser/level-week-7728"
+							target="_blank"
+							>GitHub Link</a
+						>
+						<a
+							class="project-deployed-link"
+							href="https://hotels-for-trip.netlify.app"
+							target="_blank"
+							>Site Link</a
+						>
+					</div>
+					<p class="project-description">
+						Chillout is an online platform where user can search and book any hotel.
+						User can search multiple hotels across the world at different locations. The
+						hotels can be find by using specific keywords. Hotels list can also be fine
+						tuned using multiple filters based on price, class, deals, brands, etc. Any
+						hotel can booked and view them in the cart.
+					</p>
+				</div>
+				<div class="project-card">
+					<img src="resources/kpc.png" alt="project-img" />
+					<h2 class="project-title">KPC</h2>
+					<p class="project-tech-stack">Tech Stack: HTML | CSS | JS</p>
+					<div class="project-links">
+						<a
+							class="project-github-link"
+							href="https://github.com/rajeshuser/tall-question-6900"
+							target="_blank"
+							>GitHub Link</a
+						>
+						<a
+							class="project-deployed-link"
+							href="https://kpc.netlify.app"
+							target="_blank"
+							>Site Link</a
+						>
+					</div>
+					<p class="project-description">
+						KPC is an online non-veg food website where user can buy different kinds of
+						chicken dishes and get delivered at the door-step within 24hrs. The website
+						presents variety of chicken items which can be searched by keywords and
+						filtered for fine tuned results. User can purchase any product, mark as
+						favourite, get the order summary and make the payment. The website also has
+						admin side where admin can manage and update the stock.
+					</p>
+				</div>
+				<div class="project-card">
+					<img src="resources/fashion-fabric.png" alt="project-img" />
+					<h2 class="project-title">Fashion Fabric</h2>
+					<p class="project-tech-stack">Tech Stack: HTML | CSS | JS | React</p>
+					<div class="project-links">
+						<a
+							class="project-github-link"
+							href="https://github.com/rajeshuser/lonely-milk-4878"
+							target="_blank"
+							>GitHub Link</a
+						>
+						<a
+							class="project-deployed-link"
+							href="https://fashion-fabric.netlify.app"
+							target="_blank"
+							>Site Link</a
+						>
+					</div>
+					<p class="project-description">
+						Fashion Fabric is an e-commerce website that provides modern clothing like
+						coats, jackets, pants etc. User can search the desired apparels, fine tune
+						the results using filter functionality and sort according to the price or
+						rating of the products. User can buy multiple products, mark them as
+						favourite, see the order details, delete the product from the order and make
+						the payment. The website also has the admin side to manage the stock in the
+						database.
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -177,10 +232,22 @@
 
 		<div id="contact">
 			<h1 class="section-headings">Contact</h1>
-			<p id="contact-github">GitHub</p>
-			<p id="contact-linkedin">LinkedIn</p>
 			<p id="contact-phone">+917558597408</p>
-			<p id="contact-email">rajeshdyawarkonda123@gmail.com</p>
+			<p id="contact-email">
+				<a href="mailto:rajeshdyawarkonda123@gmail.com">rajeshdyawarkonda123@gmail.com</a>
+			</p>
+			<p id="contact-github"><a href="https://github.com/rajeshuser">GitHub</a></p>
+			<p id="contact-linkedin">
+				<a href="https://in.linkedin.com/in/rajesh-dyawarkonda-a09a1a1a2">LinkedIn</a>
+			</p>
+			<p>Address: Solapur, Maharashtra</p>
+			<div id="contact-icon-links">
+				<a href="https://github.com/rajeshuser"><img src="resources/github-logo.png" /></a>
+				<a href="https://in.linkedin.com/in/rajesh-dyawarkonda-a09a1a1a2"
+					><img src="resources/linkedin-logo.png"
+				/></a>
+				<a href="rajeshdyawarkonda123@gmail.com"><img src="resources/gmail-logo.png" /></a>
+			</div>
 		</div>
 	</body>
 </html>

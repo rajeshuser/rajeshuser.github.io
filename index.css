@@ -1,6 +1,6 @@
-* {
-	/* border: 1px solid white; */
-}
+/* * {
+	border: 1px solid white;
+} */
 
 html {
 	scroll-behavior: smooth;
@@ -92,6 +92,16 @@ h1 {
 	padding: 0px 30px;
 	border: 1px solid cyan;
 	border-radius: 100px;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#resume-link-1>img,
+#resume-link-2>img {
+	width: 25px;
+	border-radius: 5px;
 }
 
 #resume-link-1:hover {
@@ -115,7 +125,7 @@ h1 {
 
 @media screen and (max-width: 900px) {
 	#nav-menu>#nav-options {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: stretch;
@@ -176,6 +186,11 @@ h1 {
 	padding: 0px 30px;
 	border: 1px solid cyan;
 	border-radius: 100px;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100px;
 }
 
 #resume-link-2:hover {
@@ -306,4 +321,119 @@ h1 {
 #soft-skills-wrapper>.skills-card>img {
 	width: 100px;
 	border-radius: 10px;
+}
+
+#projects-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+#projects-wrapper>* {
+	height: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+	#projects-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projects-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+.project-card {
+	width: 100%;
+}
+
+.project-title {
+	color: cyan;
+}
+
+.project-description {
+	text-align: justify;
+	height: 51%;
+}
+
+.project-card>img {
+	width: 100%;
+	border-radius: 10px;
+	transition: scale 0.5s ease;
+}
+
+.project-card>img:hover {
+	scale: 1.1;
+}
+
+.project-tech-stack {
+	font-weight: bold;
+}
+
+.project-links {
+	width: fit-content;
+	margin-left: auto;
+}
+
+.project-github-link,
+.project-deployed-link {
+	text-decoration: none;
+	color: cyan;
+	border-bottom: 1px solid cyan;
+}
+
+.project-card>a:hover {
+	cursor: pointer;
+}
+
+#contact>h1 {
+	color: black;
+}
+
+#contact {
+	background-color: cyan;
+	color: black;
+	text-align: center;
+}
+
+#contact>p {
+	width: fit-content;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#contact>p,
+#contact-icon-links>a>img {
+	border: 2px solid cyan;
+	border-radius: 10px;
+	transition: border-color 0.5s ease;
+}
+
+#contact>p:hover,
+#contact-icon-links>a>img:hover {
+	border-color: black;
+}
+
+#contact-icon-links {
+	display: flex;
+	width: 150px;
+	margin: auto;
+}
+
+#contact-icon-links>a {
+	display: block;
+	width: 100%;
+}
+
+#contact-icon-links>a>img {
+	width: 100%;
+}
+
+#contact a {
+	text-decoration: none;
+	color: black;
 }
