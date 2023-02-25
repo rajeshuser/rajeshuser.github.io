@@ -23,6 +23,12 @@ h1 {
 	color: cyan;
 }
 
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 2rem !important;
+	}
+}
+
 #home,
 #about,
 #skills,
@@ -30,7 +36,20 @@ h1 {
 #contact,
 .react-activity-calendar,
 .github-stats {
-	padding: 40px 100px 100px 100px;
+	padding: 40px 100px 0px;
+}
+
+@media screen and (max-width: 900px) {
+
+	#home,
+	#about,
+	#skills,
+	#projects,
+	#contact,
+	.react-activity-calendar,
+	.github-stats {
+		padding: 40px 50px 0px;
+	}
 }
 
 .section-headings {
@@ -335,16 +354,15 @@ h1 {
 
 @media screen and (max-width: 900px) {
 	#projects-wrapper {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	#projects-wrapper {
 		grid-template-columns: repeat(1, 1fr);
 	}
-
-}
+} */
 
 .project-card {
 	width: 100%;
@@ -389,6 +407,33 @@ h1 {
 	cursor: pointer;
 }
 
+.react-activity-calendar>* {
+	width: 100%;
+}
+
+#github-top-langs {
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+	.github-stats>img {
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.github-stats>img {
+		display: block;
+		margin: auto;
+		width: 100%;
+		padding-top: 50px;
+	}
+}
+
 #contact>h1 {
 	color: black;
 }
@@ -422,6 +467,7 @@ h1 {
 	display: flex;
 	width: 150px;
 	margin: auto;
+	gap: 10px;
 }
 
 #contact-icon-links>a {
