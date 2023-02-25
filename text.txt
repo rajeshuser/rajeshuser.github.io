@@ -1,3 +1,9 @@
-href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
+<a
+					id="resume-button-1"
+					class="nav-link resume"
+					href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
 					target="_blank"
-					download="Rajesh_Dyawarkonda_Resume.pdf"
+				>
+					<img src="resources/download-icon.png" />
+					Resume
+				</a>
