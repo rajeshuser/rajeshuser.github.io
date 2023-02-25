@@ -4,9 +4,9 @@ document.querySelector("#menu-icon").addEventListener("click", (event) => {
 	navOptions.style.display = display == "flex" ? "none" : "flex";
 });
 
-document.getElementById("resume-link-1").addEventListener("click", downloadFile);
+document.getElementById("resume-button-1").addEventListener("click", downloadFile);
 
-document.getElementById("resume-link-2").addEventListener("click", downloadFile);
+document.getElementById("resume-button-2").addEventListener("click", downloadFile);
 
 function downloadFile() {
 	let link = document.createElement("a");
