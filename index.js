@@ -9,7 +9,6 @@ document.querySelector("#menu-icon").addEventListener("click", (event) => {
 // document.getElementById("resume-button-2").addEventListener("click", downloadFile);
 
 // function downloadFile() {
-// 	console.log("downloading")
 // 	let link = document.createElement("a");
 // 	link.href = "Rajesh_Dyawarkonda_Resume.pdf";
 // 	link.download = "Rajesh_Dyawarkonda_Resume.pdf";

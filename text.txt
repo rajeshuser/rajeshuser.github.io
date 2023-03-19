@@ -1,9 +1,1 @@
-<a
-					id="resume-button-1"
-					class="nav-link resume"
-					href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
-					target="_blank"
-				>
-					<img src="resources/download-icon.png" />
-					Resume
-				</a>
+href="https://drive.google.com/file/d/1xUhgWoTVILtyyJkRONTPPt1GmJm0GIRa/view?usp=sharing"
