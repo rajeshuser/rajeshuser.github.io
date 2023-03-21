@@ -20,6 +20,6 @@ function redirect() {
 	window.open("Rajesh_Dyawarkonda_Resume.pdf");
 }
 
-document.getElementById("resume-link-1").addEventListener("click", redirect);
+document.getElementById("resume-button-1").addEventListener("click", redirect);
 
-document.getElementById("resume-link-2").addEventListener("click", redirect);
+document.getElementById("resume-button-2").addEventListener("click", redirect);
