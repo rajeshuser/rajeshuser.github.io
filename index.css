@@ -104,7 +104,7 @@ h1 {
 	text-align: center;
 }
 
-#resume-button-1 {
+#resume-link-1 {
 	margin-left: auto;
 	color: cyan;
 	background-color: black;
@@ -117,13 +117,13 @@ h1 {
 	align-items: center;
 }
 
-#resume-button-1>img,
-#resume-button-2>img {
+#resume-link-1>img,
+#resume-link-2>img {
 	width: 25px;
 	border-radius: 5px;
 }
 
-#resume-button-1:hover {
+#resume-link-1:hover {
 	cursor: pointer;
 	color: black;
 	background-color: cyan;
@@ -161,7 +161,7 @@ h1 {
 		display: block;
 	}
 
-	#resume-button-1 {
+	#resume-link-1 {
 		margin: auto;
 	}
 }
@@ -198,7 +198,7 @@ h1 {
 	}
 }
 
-#resume-button-2 {
+#resume-link-2 {
 	margin-left: auto;
 	color: cyan;
 	background-color: black;
@@ -212,7 +212,7 @@ h1 {
 	width: 100px;
 }
 
-#resume-button-2:hover {
+#resume-link-2:hover {
 	cursor: pointer;
 	color: black;
 	background-color: cyan;
