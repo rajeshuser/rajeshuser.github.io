@@ -16,10 +16,10 @@ document.querySelector("#menu-icon").addEventListener("click", (event) => {
 // 	link.remove();
 // }
 
-document.getElementById("resume-button-1").addEventListener("click", () => {
+function redirect() {
 	window.open("Rajesh_Dyawarkonda_Resume.pdf");
-});
+}
 
-document.getElementById("resume-button-2").addEventListener("click", () => {
-	window.open("Rajesh_Dyawarkonda_Resume.pdf");
-});
+document.getElementById("resume-button-1").addEventListener("click", redirect);
+
+document.getElementById("resume-button-2").addEventListener("click", redirect);
