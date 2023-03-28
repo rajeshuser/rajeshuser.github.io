@@ -104,17 +104,19 @@ h1 {
 	text-align: center;
 }
 
-#resume-button-1 {
+#resume-button-1,
+#resume-button-2 {
 	margin-left: auto;
 	color: cyan;
 	background-color: black;
-	padding: 0px 30px;
+	padding: 5px 30px;
 	border: 1px solid cyan;
 	border-radius: 100px;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 150px;
 }
 
 #resume-button-1>img,
@@ -123,7 +125,7 @@ h1 {
 	border-radius: 5px;
 }
 
-#resume-button-1:hover {
+#resume-button-1:hover, #resume-button-2:hover {
 	cursor: pointer;
 	color: black;
 	background-color: cyan;
@@ -161,9 +163,9 @@ h1 {
 		display: block;
 	}
 
-	#resume-button-1 {
+	/* #resume-button-1 {
 		margin: auto;
-	}
+	} */
 }
 
 #about-wrapper {
@@ -198,7 +200,7 @@ h1 {
 	}
 }
 
-#resume-button-2 {
+/* #resume-button-2 {
 	margin-left: auto;
 	color: cyan;
 	background-color: black;
@@ -210,14 +212,14 @@ h1 {
 	justify-content: space-between;
 	align-items: center;
 	width: 100px;
-}
+} */
 
-#resume-button-2:hover {
+/* #resume-button-2:hover {
 	cursor: pointer;
 	color: black;
 	background-color: cyan;
 	transition: background-color 1s ease;
-}
+} */
 
 #tech-skills {
 	display: flex;
