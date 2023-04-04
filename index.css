@@ -117,6 +117,7 @@ h1 {
 	justify-content: space-between;
 	align-items: center;
 	width: 150px;
+	gap: 10px;
 }
 
 #resume-button-1>img,
@@ -163,10 +164,6 @@ h1 {
 	#nav-menu>#menu-icon {
 		display: block;
 	}
-
-	/* #resume-button-1 {
-		margin: auto;
-	} */
 }
 
 #about-wrapper {
@@ -201,32 +198,47 @@ h1 {
 	}
 }
 
-/* #resume-button-2 {
-	margin-left: auto;
-	color: cyan;
-	background-color: black;
-	padding: 0px 30px;
-	border: 1px solid cyan;
-	border-radius: 100px;
-	text-decoration: none;
+#test-skills {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+}
+
+#html-css-js {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+#html-css-js img {
 	width: 100px;
-} */
+	height: 100px;
+	object-fit: cover;
+}
 
-/* #resume-button-2:hover {
-	cursor: pointer;
-	color: black;
-	background-color: cyan;
-	transition: background-color 1s ease;
-} */
-
-#tech-skills {
+#react-redux-router-chakra {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	flex-direction: row-reverse;
+}
+
+#react-redux-router-chakra img {
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+}
+
+#node-express-mongo {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+#node-express-mongo img {
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
 }
 
 @media screen and (max-width: 900px) {
@@ -236,16 +248,14 @@ h1 {
 }
 
 #tech-skills>h1 {
-	width: 100%;
-	text-align: center;
+	text-align: right;
 }
 
 #tech-skills-wrapper {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
-	width: 100%;
 }
 
 .tech-skill-img {
@@ -293,20 +303,8 @@ h1 {
 	}
 }
 
-#soft-skills {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-}
-
 #soft-skills>h1 {
-	flex: 1;
-	text-align: center;
-}
-
-#soft-skills-wrapper {
-	flex: 1;
+	text-align: left;
 }
 
 @media screen and (max-width: 900px) {
@@ -317,15 +315,16 @@ h1 {
 }
 
 #soft-skills-wrapper {
-	width: 50%;
+	/* width: 50%; */
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 5px;
 }
 
 @media screen and (max-width: 900px) {
 	#soft-skills-wrapper {
 		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -352,7 +351,12 @@ h1 {
 }
 
 #projects-wrapper>* {
-	height: fit-content;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 20px;
+	border: 1px solid cyan;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px cyan;
 }
 
 @media screen and (max-width: 900px) {
@@ -377,11 +381,11 @@ h1 {
 .project-card>img {
 	width: 100%;
 	border-radius: 10px;
-	transition: scale 0.5s ease;
+	transition: scale 0.3s ease;
 }
 
 .project-card>img:hover {
-	scale: 1.1;
+	scale: 1.15;
 }
 
 .project-tech-stack {
@@ -389,15 +393,29 @@ h1 {
 }
 
 .project-links {
+	display: flex;
+	gap: 10px;
 	width: fit-content;
 	margin-left: auto;
 }
 
-.project-github-link,
+.project-github-link {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
 .project-deployed-link {
 	text-decoration: none;
 	color: cyan;
 	border-bottom: 1px solid cyan;
+}
+
+.github-icon {
+	background-color: cyan;
+	width: inherit;
+	border-radius: 50px;
+	padding-bottom: 0;
 }
 
 .project-card>a:hover {
