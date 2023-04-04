@@ -125,7 +125,8 @@ h1 {
 	border-radius: 5px;
 }
 
-#resume-button-1:hover, #resume-button-2:hover {
+#resume-button-1:hover,
+#resume-button-2:hover {
 	cursor: pointer;
 	color: black;
 	background-color: cyan;
