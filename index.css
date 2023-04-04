@@ -198,10 +198,7 @@ h1 {
 	}
 }
 
-#test-skills {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
+#tech-skills-wrapper>* {
 	width: 100%;
 }
 
@@ -245,21 +242,27 @@ h1 {
 	#tech-skills {
 		flex-direction: column;
 	}
+
+	#html-css-js,
+	#react-redux-router-chakra,
+	#node-express-mongo {
+		justify-content: center;
+	}
+
+	#html-css-js img {
+		width: 75px;
+		height: 75px;
+	}
+
+	#react-redux-router-chakra img,
+	#node-express-mongo img {
+		width: 150px;
+		height: 75px;
+	}
 }
 
 #tech-skills>h1 {
 	text-align: right;
-}
-
-#tech-skills-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.tech-skill-img {
-	width: 300px;
 }
 
 .skills-card {
@@ -315,7 +318,6 @@ h1 {
 }
 
 #soft-skills-wrapper {
-	/* width: 50%; */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 5px;
