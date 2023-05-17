@@ -19,7 +19,8 @@ body {
 	background-color: cyan;
 }
 
-h1 {
+h1,
+h2 {
 	color: cyan;
 }
 
@@ -205,7 +206,7 @@ h1 {
 #html-css-js {
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -228,10 +229,23 @@ h1 {
 	object-fit: cover;
 }
 
+#tools-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+	margin: auto;
+}
+
+#tools-wrapper img {
+	width: 150px
+}
+
 #node-express-mongo {
 	display: flex;
 	flex-direction: row;
-	justify-content: end;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
