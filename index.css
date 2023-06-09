@@ -240,7 +240,7 @@ h2 {
 	line-height: 3rem;
 	text-align: center;
 	margin: auto;
-	animation: flex 1s linear 0s infinite;
+	animation: flex 1s ease 0s infinite;
 }
 
 @keyframes flex {
@@ -541,26 +541,21 @@ h2 {
 	width: 100%;
 }
 
+.github-stats>img {
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+}
+
 #github-top-langs {
 	display: block;
 	margin: auto;
 	padding-top: 50px;
 }
 
-@media screen and (max-width: 900px) {
-	.github-stats>img {
-		display: block;
-		margin: auto;
-		padding-top: 50px;
-	}
-}
-
 @media screen and (max-width: 600px) {
 	.github-stats>img {
-		display: block;
-		margin: auto;
 		width: 100%;
-		padding-top: 50px;
 	}
 }
 
@@ -568,8 +563,7 @@ h2 {
 	background-color: cyan;
 	color: black;
 	text-align: center;
-	border-radius: 70% 70% 0px 0px;
-	box-shadow: inset 0px 0px 10px black;
+	box-shadow: inset 0px 20px 20px black;
 }
 
 #contact>h1 {
