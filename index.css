@@ -58,6 +58,11 @@ h2 {
 	margin: 50px auto;
 }
 
+#about>h1 {
+	scale: 0;
+	margin: 0;
+}
+
 #nav-menu {
 	position: sticky;
 	height: 100%;
@@ -70,13 +75,19 @@ h2 {
 	padding-right: 50px;
 	border: 1px solid white;
 	margin: 0;
-	background-color: black;
 	z-index: 1000;
+	backdrop-filter: blur(50px);
 }
 
 #nav-menu>#rajesh-logo {
 	flex: 1;
 	padding: auto 100px auto 100px;
+	text-decoration: none;
+}
+
+#nav-menu>#rajesh-logo>a {
+	color: cyan;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -103,6 +114,40 @@ h2 {
 	color: cyan;
 	flex: 1;
 	text-align: center;
+}
+
+#top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: radial-gradient(cyan, cyan, black);
+	text-decoration: none;
+	color: black;
+	border-radius: 500px;
+	padding: 10px;
+	font-size: xx-large;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px cyan;
+	font-family: 'Lucida Sans';
+	animation: bounce 1s linear 0s infinite;
+}
+
+#top:hover {
+	animation-play-state: paused;
+}
+
+@keyframes bounce {
+	0% {
+		bottom: 30px;
+	}
+
+	50% {
+		bottom: 35px;
+	}
+
+	100% {
+		bottom: 30px;
+	}
 }
 
 #resume-button-1,
@@ -176,6 +221,8 @@ h2 {
 
 #profile-picture {
 	width: 300px;
+	border-radius: 300px;
+	box-shadow: 0px 0px 50px grey;
 }
 
 @media screen and (max-width: 900px) {
@@ -190,13 +237,50 @@ h2 {
 }
 
 #user-detail-name {
-	text-shadow: 0px 0px 30px cyan;
+	line-height: 3rem;
+	text-align: center;
+	margin: auto;
+	animation: flex 1s linear 0s infinite;
+}
+
+@keyframes flex {
+	0% {
+		transform: scaleX(1);
+	}
+
+	25% {
+		transform: scaleX(1.1);
+	}
+
+	50% {
+		transform: scaleX(1);
+	}
+
+	75% {
+		transform: scaleY(1.5);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
 }
 
 @media screen and (max-width: 900px) {
 	#about-wrapper {
 		flex-direction: column;
 	}
+}
+
+#intro {
+	text-align: justify;
+}
+
+.skill-section-headings {
+	margin: auto;
+	width: fit-content;
+	padding: 10px 20px;
+	border-radius: 100px;
+	margin-bottom: 15px;
 }
 
 #tech-skills-wrapper>* {
@@ -292,7 +376,9 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
-	transition: scale 0.5s ease;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 10px grey;
+	transition: scale 0.3s ease;
 }
 
 .skills-card>img {
@@ -361,6 +447,10 @@ h2 {
 	}
 }
 
+#soft-skills-wrapper>.skills-card>* {
+	margin-top: 35px;
+}
+
 #soft-skills-wrapper>.skills-card>h2 {
 	margin-bottom: 0;
 	height: 70px;
@@ -381,9 +471,8 @@ h2 {
 	box-sizing: border-box;
 	height: 100%;
 	padding: 20px;
-	border: 1px solid cyan;
 	border-radius: 20px;
-	box-shadow: 5px 5px 10px cyan;
+	box-shadow: inset 0px 0px 15px grey;
 }
 
 @media screen and (max-width: 900px) {
@@ -400,6 +489,10 @@ h2 {
 	color: cyan;
 }
 
+.project-title>span {
+	font-size: medium;
+}
+
 .project-description {
 	text-align: justify;
 	height: 51%;
@@ -408,11 +501,6 @@ h2 {
 .project-card>img {
 	width: 100%;
 	border-radius: 10px;
-	transition: scale 0.3s ease;
-}
-
-.project-card>img:hover {
-	scale: 1.15;
 }
 
 .project-tech-stack {
@@ -476,14 +564,16 @@ h2 {
 	}
 }
 
-#contact>h1 {
-	color: black;
-}
-
 #contact {
 	background-color: cyan;
 	color: black;
 	text-align: center;
+	border-radius: 70% 70% 0px 0px;
+	box-shadow: inset 0px 0px 10px black;
+}
+
+#contact>h1 {
+	color: black;
 }
 
 #contact>p {
