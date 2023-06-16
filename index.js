@@ -4,6 +4,8 @@ document.querySelector("#menu-icon").addEventListener("click", (event) => {
 	navOptions.style.display = display == "flex" ? "none" : "flex";
 });
 
+GitHubCalendar(".calendar", "rajeshuser", { responsive: true });
+
 function download() {
 	let link = document.createElement("a");
 	link.href = "Rajesh_Dyawarkonda_Resume.pdf";
@@ -16,12 +18,12 @@ function redirect() {
 	window.open("Rajesh_Dyawarkonda_Resume.pdf");
 }
 
-document.getElementById("resume-button-1").addEventListener("click", function() {
-	redirect()
-	download()
+document.getElementById("resume-button-1").addEventListener("click", function () {
+	redirect();
+	download();
 });
 
-document.getElementById("resume-button-2").addEventListener("click", function() {
-	redirect()
-	download()
+document.getElementById("resume-button-2").addEventListener("click", function () {
+	redirect();
+	download();
 });
